@@ -77,6 +77,34 @@ select {
   margin-right: 10px;
   font-size: 16px;
 }
+.custom-date-picker {
+  position: relative;
+  display: inline-block;
+}
+
+#custom-date-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("calendar-icon.png"); /* Replace with your icon */
+  background-size: cover;
+  transition: box-shadow 0.3s;
+}
+
+.custom-date-picker:hover .calendar-icon {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
 
 button {
   font-size: 18px;
